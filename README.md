@@ -1,4 +1,7 @@
 # FZH119_clone
+Copied from Chinese topics: 
+ "FZH119 IIC驱动2个8*8点阵屏"
+ "FZH119 数码管 驱动程序 修改初始化可支持51 32等多平台单片机"
 
 # overview
 FZH119 is a LED (Light Emitting Diode Display) drive control and application circuit, which integrates MCU digital interface, data latch, LED drive and other circuits inside. This product has excellent performance and reliable quality. Mainly used in LED display drive of electronic products. Adopt SOP28 encapsulation form.
