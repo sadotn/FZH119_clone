@@ -14,7 +14,8 @@ Feature Description
 - Built -in power-on reset circuit
 - Package form: SOP28 , TSSOP20
 Interface Description
-The data of the microprocessor communicates with FZH119 through the two-wire bus interface . When CLK is high level when inputting data, the signal on DIN must remain unchanged; only when the clock signal on CLK is low level, the signal on DIN can be Change. The input of data is always the low bit first, and the high bit is transmitted later. The start condition of data input is when CLK is high level, DIN changes from high level to low level; the end condition is when CLK is high level, DIN level changes from low level to high level .
+The data of the microprocessor communicates with FZH119 through the two-wire bus interface . When CLK is high level when inputting data, the signal on DIN must remain unchanged; only when the clock signal on CLK is low level, the signal on DIN can be Change. The input of data is always the low bit first, and the high bit is transmitted later. The start condition of data input is when CLK is high level, DIN changes from high level to low level; the end condition is when CLK is high level, DIN level changes from low level to high level.  
+
 ![image](https://github.com/sadotn/FZH119_clone/assets/90098747/31dfb590-c01b-4184-b68e-0fdd071d2284)
 
 # The instruction data transmission process is as follows:
