@@ -41,3 +41,8 @@ It is necessary to pull up the 10K resistor on the data line pin of the FZH119 c
 The program is compatible with a variety of FZHxxx series chips. This is a custom chip package, and other IC programs are equally applicable. If the usage is different, just modify this function: fzh_WriteSram( 0x40,START_SRAM,temp_buff,3,fzh_light_grade);
 The reference circuit is provided as follows:
 
+# 8*8 dot matrix module circuit board
+Foreword A Polyhua family has an 8*8 dot matrix module circuit board (robot eyes) that is cheap, and recently bought a lot of them. The board contains two 8*8 dot matrix screens, and the driver chip is FZH119 (Fang Zhonghe). 
+FZH119 is mainly used to drive 8-segment 16-bit common cathode or 16-segment 8-bit common anode digital tubes. After inquiry, there are not many examples of FZH119 used in dot-matrix screens, but dot-matrix screens and digital tubes are interlinked. In order to realize the driver of the dot matrix screen, this article mostly draws on the source code of the digital tube driver of the predecessors. 
+At the same time, the circuit board may have installation and design defects, the polarity of the filter capacitor is reversed, and the wiring is not in the usual way. Originally, FZH119 can use IIC to drive the dot matrix as long as the low bit of the data is in the front and the high bit is in the back. But the normal IIC appears as garbled characters on this board. In order to solve the problem of garbled characters, two arrays seg_sq[] and grid_sq[] are added to control the output sequence of segments. 
+I'm a beginner and I don't know if this control is reasonable, it won't be superfluous. In any case, the normal display was finally realized.
